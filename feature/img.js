@@ -3,6 +3,7 @@ function showImage(src) {
     const modalImage = document.getElementById("modalImage");
   
     modal.style.display = "flex"; // Affiche la modal
+    modal.style.cursor = "zoom-out"; // Change le curseur de la modal
     modalImage.src = src; // Définit la source de l'image agrandie
   }
   
