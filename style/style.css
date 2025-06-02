@@ -120,3 +120,11 @@ body {
 .cursor{
   cursor: pointer;
 }
+
+.gris {
+  color: rgba(255, 255, 255, .5); !important;
+}
+
+.gris:hover {
+  color: #6ea8fe !important;
+}

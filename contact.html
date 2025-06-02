@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="fr" class="h-100" data-bs-theme="auto">
 <head>
-    <script src="../style/color-modes.js"></script>
-    <link rel="icon" type="image/x-icon" href="../style/favicon.png">
+    <script src="/style/color-modes.js"></script>
+    <link rel="icon" type="image/x-icon" href="style/favicon.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Evan Nunes">
     <title>Portfolio</title>
 
-    <link href="../style/style.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -91,6 +91,23 @@
         .bd-mode-toggle .dropdown-menu .active .bi {
             display: block !important;
         }
+
+        /* Structure de base sur tout le body */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Pour que le contenu prenne toute la place restante */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;  /* Centrage horizontal du contenu */
+            align-items: center;      /* Centrage vertical si besoin */
+            padding: 2rem;
+        }
     </style>
 
 
@@ -122,7 +139,8 @@
     </symbol>
     <symbol id="biographie" viewBox="0 0 16 16">
         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
     </symbol>
     <symbol id="coeur" viewBox="0 0 16 16">
         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
@@ -134,6 +152,7 @@
     <symbol id="lumiere" viewBox="0 0 16 16">
         <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
     </symbol>
+
 
 </svg>
 
@@ -195,163 +214,100 @@
         <div>
             <h3 class="float-md-start mb-0">Evan Nunes</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../index.html">Home</a>
-                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="#">Compétence</a>
+                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="index.html">Home</a>
+                <a class="nav-link fw-bold py-1 px-0 " aria-current="page"
+                   href="Competence/Competence.html">Compétence</a>
 
-                <div class="dropdown text-end nav-link fw-bold py-1 px-0">
+                <div class="dropdown text-end nav-link fw-bold py-1 px-0 gris">
                     <a href="#" class=" fw-bold py-1 px-0  text-decoration-none dropdown-toggle gris"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         Projets
                     </a>
                     <ul class="dropdown-menu text-small">
-                        <li><a class="dropdown-item" href="../feature/Poursuite.html">Poursuite d'études</a></li>
+                        <li><a class="dropdown-item" href="feature/Poursuite.html">Poursuite d'études</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="../feature/nuitInfo.html">La nuit de L'info</a></li>
+                        <li><a class="dropdown-item" href="feature/nuitInfo.html">La nuit de L'info</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="../feature/Trains.html">Trains</a></li>
+                        <li><a class="dropdown-item" href="feature/Trains.html">Trains</a></li>
                     </ul>
                 </div>
-                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../contact.html">Contact</a>
+                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="contact.html">Contact</a>
 
             </nav>
         </div>
     </header>
 
     <main class="px-3">
-        <img src="./style/img/Evan.png" alt="Evan Nunes" class="rounded-circle border border-black" width="300" height="300">
-        <h1 class="mb-3">Bienvenue sur mon portfolio !</h1>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
 
-        <div class="container">
-            <svg class="bi mt-5" width="50" height="50">
-                <use xlink:href="#biographie"/>
-            </svg>
+                    <div class="card contact-card p-4">
+                        <h2 class="text-center mb-4">Contactez-moi</h2>
 
-            <h3 class="pb-2 border-bottom">Biographie</h3>
-            <p class="lead mb-5">
-                Passionné par l’<strong>informatique</strong> depuis mon plus jeune âge, j’ai toujours été curieux de
-                comprendre comment fonctionnent les <strong>technologies</strong> qui nous entourent. Actuellement
-                étudiant en <strong>2ᵉ année de BUT informatique</strong> à <strong>Montpellier</strong>, je me
-                spécialise dans la réalisation d’<strong>applications web</strong>, couvrant les aspects de <strong>conception</strong>,
-                <strong>développement</strong> et <strong>validation</strong>. Mes compétences en <strong>HTML</strong>,
-                <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> et <strong>SQL</strong> me
-                permettent de développer des solutions modernes et fonctionnelles, que ce soit en méthodologie <strong>Agile</strong>
-                ou <strong>Cascade</strong>.
-            </p>
+                        <div class="mb-4 text-center">
 
+                            <p class="mb-1">
+                                <strong>Nom :</strong> Evan Nunes
+                            </p>
 
-            <svg class="bi" width="50" height="50">
-                <use xlink:href="#coeur"/>
-            </svg>
-            <h3 class="pb-2 border-bottom">Centres d'intérêt</h3>
-            <p class="lead mb-5">
-                En dehors de l’informatique, je m’intéresse au <strong>gaming</strong>, où j’explore les mécaniques des
-                jeux et les <strong>technologies</strong> qui les rendent immersifs. Les <strong>voitures</strong> me
-                passionnent également, notamment les <strong>innovations technologiques</strong> et les modifications
-                qui permettent d’en repousser les limites. Ces centres d’intérêt reflètent ma <strong>curiosité</strong>
-                pour la nouveauté et mon goût pour le <strong>détail</strong>.
-            </p>
+                            <p class="mb-1">
+                                <strong>Email :</strong>
+                                <a href="mailto:evan.nunes@orange.fr?subject=Contact%20depuis%20le%20portfolio&body=Bonjour%20Evan%2C%0AJe%20vous%20contacte%20concernant..."
+                                   class="text-decoration-none">
+                                    evan.nunes@orange.fr
+                                </a>
+                            </p>
 
+                            <p class="mb-1">
+                                <strong>Téléphone :</strong>
+                                <a href="tel:+33672218600" class="text-decoration-none">
+                                    06 72 21 86 00
+                                </a>
+                            </p>
 
-
-            <svg class="bi" width="50" height="50">
-                <use xlink:href="#school"/>
-            </svg>
-            <h3 class="pb-2 border-bottom">Parcours de formation</h3>
-            <p class="lead ">
-            <ul class="list-group mb-5">
-                <li class="list-group-item"><strong>2023-2025</strong> : <strong>BUT Informatique</strong> (<strong>IUT de Montpellier</strong>) - Parcours réalisation d'applications :
-                    conception, développement,
-                    validation.
-
-                    <ul class="list-group">
-                        <li class="list-group-item">Apprentissage des <strong>technologies web</strong> et des <strong>bases de données</strong>.
-                        </li>
-                        <li class="list-group-item">Réalisation de projets en équipe, notamment un <strong>site vitrine</strong>, un <strong>serveur
-                            LAMP</strong>, et un <strong>jeu en Java/JavaFX</strong>.
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">Avant <strong>2023</strong> : Formation générale avec une orientation progressive vers les <strong>technologies
-                    numériques</strong>.
-                </li>
-            </ul>
-            </p>
-
-            <svg class="bi" width="50" height="50">
-                <use xlink:href="#lumiere"/>
-            </svg>
-            <h3 class="pb-2 border-bottom">Vision pour le futur</h3>
-            <p class="lead mb-5">
-                Après l’obtention de mon <strong>BUT</strong>, je souhaite poursuivre dans le domaine du <strong>développement
-                web</strong>, en intégrant une <strong>alternance</strong> ou un <strong>stage</strong> qui me permettra
-                d’approfondir mes compétences en <strong>PHP</strong>, frameworks modernes et <strong>architectures
-                web</strong>. À terme, mon objectif est de contribuer à des projets ambitieux et innovants au sein d’une
-                entreprise spécialisée dans la <strong>transformation digitale</strong>.
-            </p>
-
-
-
-        </div>
-
-        <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">Projets</h2>
-
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col thumbnail cursor">
-                    <a href="feature/Poursuite.html" class="link-offset-2 link-underline link-underline-opacity-0">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                             style="background-image: url('./style/img/etude.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Application de poursuite d'étude</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img class="rounded-circle border border-white " width="50" height="50"
-                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                             alt="">
-                                    </li>
-                                </ul>
-                            </div>
+                            <p class="fst-italic text-muted small">
+                                Merci de m’envoyer un message avant d’appeler, je suis souvent en cours ou je filtre les
+                                appels non identifiés.
+                            </p>
                         </div>
-                    </a>
-                </div>
 
-                <div class="col thumbnail cursor">
-                    <a href="feature/nuitInfo.html" class="link-offset-2 link-underline link-underline-opacity-0">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                             style="background-image: url('./style/img/nuit.png');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img class="rounded-circle border border-white" width="50" height="50"
-                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                             alt="">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col thumbnail cursor">
-                    <a href="feature/Trains.html" class="link-offset-2 link-underline link-underline-opacity-0">
 
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg "
-                             style="background-image: url('./style/img/trains.JPG');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Trains - Jeu de plateau</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img class="rounded-circle border border-white white" width="50" height="50"
-                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                             alt="">
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="border-top border-secondary my-4 w-75 mx-auto"></div>
+
+
+                        <h4>Mes réseaux professionnels</h4>
+                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-3">
+                            <a href="https://github.com/EvanAttack" target="_blank"
+                               class="d-flex align-items-center text-decoration-none ">
+                                <svg width="48" height="48" fill="dark" class="me-2">
+                                    <use xlink:href="#GitHub"/>
+                                </svg>
+                                 <h3>GitHub</h3>
+                            </a>
+
+                            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/nunese" target="_blank"
+                               class="d-flex align-items-center text-decoration-none ">
+                                <svg width="48" height="48" fill="dark" class="me-2">
+                                    <use xlink:href="#GitLab"/>
+                                </svg>
+                                <h3>GitLab</h3>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/evan-nunes/" target="_blank"
+                               class="d-flex align-items-center text-decoration-none ">
+
+                                <svg width="48" height="48" fill="dark" class="me-2">
+                                    <use xlink:href="#Linkedin"/>
+                                </svg>
+                                <h3>LinkedIn</h3>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
