@@ -2,14 +2,14 @@
 <html lang="fr" class="h-100" data-bs-theme="auto">
 <head>
     <script src="/style/color-modes.js"></script>
-    <link rel="icon" type="image/x-icon" href="style/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../style/favicon.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Evan Nunes">
-    <title>Contact</title>
+    <title>Stage</title>
 
-    <link href="style/style.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -100,20 +100,15 @@
             flex-direction: column;
         }
 
-        /* Pour que le contenu prenne toute la place restante */
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;  /* Centrage horizontal du contenu */
-            align-items: center;      /* Centrage vertical si besoin */
-            padding: 2rem;
-        }
+
     </style>
 
 
     <!-- Custom styles for this template -->
 </head>
 <body class="d-flex text-center bg-body-tertiary">
+
+
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -137,23 +132,6 @@
     <symbol id="GitLab" viewBox="0 0 16 16">
         <path d="m15.734 6.1-.022-.058L13.534.358a.57.57 0 0 0-.563-.356.6.6 0 0 0-.328.122.6.6 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.67.67 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.05 4.05 0 0 0 1.34-4.668Z"/>
     </symbol>
-    <symbol id="biographie" viewBox="0 0 16 16">
-        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-        <path fill-rule="evenodd"
-              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-    </symbol>
-    <symbol id="coeur" viewBox="0 0 16 16">
-        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-    </symbol>
-    <symbol id="school" viewBox="0 0 16 16">
-        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-    </symbol>
-    <symbol id="lumiere" viewBox="0 0 16 16">
-        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-    </symbol>
-
-
 </svg>
 
 <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
@@ -212,111 +190,125 @@
 <div class=" d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
         <div>
-            <h3 class="float-md-start mb-0">Evan Nunes</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="index.html">Home</a>
-                <a class="nav-link fw-bold py-1 px-0 " aria-current="page"
-                   href="Competence/Competence.html">Compétence</a>
+                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../Competence/Competence.html">Compétence</a>
 
-                <div class="dropdown text-end nav-link fw-bold py-1 px-0 gris">
-                    <a href="#" class=" fw-bold py-1 px-0  text-decoration-none dropdown-toggle gris"
-                       data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown text-end nav-link fw-bold py-1 px-0 gris ">
+                    <a href="#" class=" fw-bold py-1 px-0  text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         Projets
                     </a>
                     <ul class="dropdown-menu text-small">
-                        <li><a class="dropdown-item" href="feature/Poursuite.html">Poursuite d'études</a></li>
+                        <li><a class="dropdown-item" href="Poursuite.html">Poursuite d'études</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="nuitInfo.html">La nuit de L'info</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Trains.html">Trains</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="feature/nuitInfo.html">La nuit de L'info</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="feature/Trains.html">Trains</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="feature/Stage.html">Stage</a></li>
+                        <li><a class="dropdown-item" href="Stage.html">Stage</a></li>
                     </ul>
                 </div>
-                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="contact.html">Contact</a>
-
+                <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <main class="px-3">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
+        <img src="../style/img/LM.png" alt="logo de Lundi Matin" width="300" height="300">
 
-                    <div class="card contact-card p-4">
-                        <h2 class="text-center mb-4">Contactez-moi</h2>
+        <h1 class="mt-4">Mon stage chez LUNDI MATIN</h1>
 
-                        <div class="mb-4 text-center">
+        <div class="d-flex gap-2 justify-content-center py-5">
+            <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">HTML
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="">PHP
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript
+            </span>
 
-                            <p class="mb-1">
-                                <strong>Nom :</strong> Evan Nunes
-                            </p>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="">Angular
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="">VueJS
+            </span>
 
-                            <p class="mb-1">
-                                <strong>Email :</strong>
-                                <a href="mailto:evan.nunes@orange.fr?subject=Contact%20depuis%20le%20portfolio&body=Bonjour%20Evan%2C%0AJe%20vous%20contacte%20concernant..."
-                                   class="text-decoration-none">
-                                    evan.nunes@orange.fr
-                                </a>
-                            </p>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">Bootstrap
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" alt="">MariaDB
+            </span>
 
-                            <p class="mb-1">
-                                <strong>Téléphone :</strong>
-                                <a href="tel:+33672218600" class="text-decoration-none">
-                                    06 72 21 86 00
-                                </a>
-                            </p>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+                <img class="rounded-circle me-1" width="24" height="24"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="">Apache
+            </span>
+        </div>
 
-                            <p class="fst-italic text-muted small">
-                                Merci de m’envoyer un message avant d’appeler, je suis souvent en cours ou je filtre les
-                                appels non identifiés.
-                            </p>
-                        </div>
+        <div class=" container ">
+
+            <div class="row g-5">
+                <h2>Contexte :</h2>
+                <p>
+                    Dans le cadre de ma deuxième année de BUT Informatique, j’ai réalisé un stage de 8 semaines chez LUNDI MATIN, une entreprise située à Montpellier, spécialisée dans les solutions logicielles de gestion (ERP, caisse, e-commerce…).
+
+                    J’ai intégré l’équipe technique au sein du service R&D, où j’ai pu contribuer au développement et à l’amélioration de leur application web.
+                </p>
+                <p>
+                    Le projet a été développé en <strong>PHP</strong>, en suivant le modèle <strong>MVC</strong> pour structurer le code de manière modulaire et efficace. Nous avons utilisé <strong>Apache</strong> pour faire tourner le serveur, garantissant une exécution fluide de l'application.
+                </p>
 
 
-                        <div class="border-top border-secondary my-4 w-75 mx-auto"></div>
+                <h2>Objectifs principaux :</h2>
 
 
-                        <h4>Mes réseaux professionnels</h4>
-                        <div class="d-flex justify-content-center flex-wrap gap-4 mt-3">
-                            <a href="https://github.com/EvanAttack" target="_blank"
-                               class="d-flex align-items-center text-decoration-none ">
-                                <svg width="48" height="48" fill="dark" class="me-2">
-                                    <use xlink:href="#GitHub"/>
-                                </svg>
-                                 <h3>GitHub</h3>
-                            </a>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Participation au développement de modules internes en PHP avec VueJs et Angular.
 
-                            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/nunese" target="_blank"
-                               class="d-flex align-items-center text-decoration-none ">
-                                <svg width="48" height="48" fill="dark" class="me-2">
-                                    <use xlink:href="#GitLab"/>
-                                </svg>
-                                <h3>GitLab</h3>
-                            </a>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"> Résolution de bugs et amélioration d’interfaces utilisateurs avec HTML, CSS et JavaScript.</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Découverte et utilisation de Git dans un environnement de travail collaboratif (branches, merge, pull requests, cherry-pick).</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Collaboration avec les chefs de produit pour tester et valider les nouvelles fonctionnalités.</a>
 
-                            <a href="https://www.linkedin.com/in/evan-nunes/" target="_blank"
-                               class="d-flex align-items-center text-decoration-none ">
-
-                                <svg width="48" height="48" fill="dark" class="me-2">
-                                    <use xlink:href="#Linkedin"/>
-                                </svg>
-                                <h3>LinkedIn</h3>
-                            </a>
-                        </div>
-                    </div>
                 </div>
+
+                <h2>Apprentissages</h2>
+
+                <p>
+                    Ce stage m’a permis de :
+
+                    Renforcer mes compétences en développement back-end avec Symfony.
+                    Apprendre à évoluer dans un cadre professionnel en respectant les méthodes agiles.
+                    Améliorer ma capacité à résoudre des problèmes concrets en autonomie.
+                    Communiquer efficacement avec différentes équipes métiers et techniques.
+
+                </p>
+
+
+
+
             </div>
         </div>
 
     </main>
+
     <div class="footer mt-auto py-3 bg-body-tertiary">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
@@ -350,10 +342,17 @@
             </ul>
         </footer>
     </div>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script src="img.js"></script>
 
+
+<!-- Modal pour afficher l'image agrandie -->
+<div id="imageModal" class="modal" onclick="hideImage()">
+    <img id="modalImage" class="modal-content">
+</div>
 </body>
 </html>

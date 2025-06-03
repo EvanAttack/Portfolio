@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Evan Nunes">
-    <title>Portfolio</title>
+    <title>Compétence</title>
 
     <link href="../style/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -90,6 +90,38 @@
 
         .bd-mode-toggle .dropdown-menu .active .bi {
             display: block !important;
+        }
+
+        .competence-header {
+            background-color: #ffc107;
+            padding: 15px;
+            border-radius: 5px 5px 0 0;
+            color: #212529;
+            font-weight: bold;
+        }
+
+        .competence-header4 {
+            background-color: #28a745; /* Green color */
+            padding: 15px;
+            border-radius: 5px 5px 0 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .competence-header5 {
+            background-color: #007bff;
+            padding: 15px;
+            border-radius: 5px 5px 0 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .acquisition-badge {
+            background-color: #007bff;
+            color: white;
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 0.8em;
         }
     </style>
 
@@ -213,6 +245,10 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="../feature/Trains.html">Trains</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../feature/Stage.html">Stage</a></li>
                     </ul>
                 </div>
                 <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="../contact.html">Contact</a>
@@ -222,142 +258,246 @@
     </header>
 
     <main class="px-3">
-        <img src="./style/img/Evan.png" alt="Evan Nunes" class="rounded-circle border border-black" width="300" height="300">
-        <h1 class="mb-3">Bienvenue sur mon portfolio !</h1>
-
-        <div class="container">
-            <svg class="bi mt-5" width="50" height="50">
-                <use xlink:href="#biographie"/>
-            </svg>
-
-            <h3 class="pb-2 border-bottom">Biographie</h3>
-            <p class="lead mb-5">
-                Passionné par l’<strong>informatique</strong> depuis mon plus jeune âge, j’ai toujours été curieux de
-                comprendre comment fonctionnent les <strong>technologies</strong> qui nous entourent. Actuellement
-                étudiant en <strong>2ᵉ année de BUT informatique</strong> à <strong>Montpellier</strong>, je me
-                spécialise dans la réalisation d’<strong>applications web</strong>, couvrant les aspects de <strong>conception</strong>,
-                <strong>développement</strong> et <strong>validation</strong>. Mes compétences en <strong>HTML</strong>,
-                <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> et <strong>SQL</strong> me
-                permettent de développer des solutions modernes et fonctionnelles, que ce soit en méthodologie <strong>Agile</strong>
-                ou <strong>Cascade</strong>.
-            </p>
+        <div class="container mt-5 mb-5">
+<!--            <div class="card">-->
+<!--                <div class="card-header competence-header">-->
+<!--                    Compétence 2 - Optimiser des applications-->
+<!--                </div>-->
+<!--                <div class="card-body competence-body">-->
+<!--                    <p class="card-text">Niveau 2 - Sélectionner les algorithmes adéquats pour répondre à un problème donné</p>-->
+<!--                </div>-->
 
 
-            <svg class="bi" width="50" height="50">
-                <use xlink:href="#coeur"/>
-            </svg>
-            <h3 class="pb-2 border-bottom">Centres d'intérêt</h3>
-            <p class="lead mb-5">
-                En dehors de l’informatique, je m’intéresse au <strong>gaming</strong>, où j’explore les mécaniques des
-                jeux et les <strong>technologies</strong> qui les rendent immersifs. Les <strong>voitures</strong> me
-                passionnent également, notamment les <strong>innovations technologiques</strong> et les modifications
-                qui permettent d’en repousser les limites. Ces centres d’intérêt reflètent ma <strong>curiosité</strong>
-                pour la nouveauté et mon goût pour le <strong>détail</strong>.
-            </p>
+<!--            <div class="card ">-->
+<!--                <div class="card-header d-flex justify-content-between align-items-center">-->
+<!--                    <span>AC1: Choisir des structures de données complexes adaptées au problème</span>-->
+<!--                    <span class="badge text-bg-success">ACQUIS</span>-->
+<!--                </div>-->
+<!--                <div class="card-body">-->
+<!--                    <div class="alert alert-info">-->
+<!--                        <strong>Association CE:</strong> Choisir des structures de données complexes (AC1) en recourant aux algorithmes et les structures de données usuels (CE2.02) et en s'appuyant sur des schémas de raisonnement (CE2.03)-->
+<!--                    </div>-->
+<!--                    <p><strong>Preuve - Stage : Structures de données</strong></p>-->
+<!--                    <p>Lors de mon stage chez Lundi Matin en tant que développeur web, j'ai appris à coder avec des technologies modernes comme Angular et VueJS pour le front-end, ainsi que PHP pour le back-end. J'ai modélisé des situations complexes liées à la gestion de données utilisateur et à l'interaction avec des bases de données (CE2.01). Pour choisir des structures adaptées (AC1), j'ai étudié les méthodes classiques disponibles et utilisé des frameworks modernes pour structurer le code de manière efficace (CE2.02). En utilisant un raisonnement structuré (CE2.03), j'ai opté pour des solutions qui permettaient une gestion efficace des données tout en assurant une bonne performance des applications.</div>-->
+<!--            </div>-->
 
+<!--            <div class="card mt-4">-->
+<!--                <div class="card-header d-flex justify-content-between align-items-center">-->
+<!--                    <span>AC2: Utiliser des techniques algorithmiques adaptées pour des problèmes complexes</span>-->
+<!--                    <span class="acquisition-badge">EN COURS D'ACQUISITION</span>-->
+<!--                </div>-->
+<!--                <div class="card-body">-->
+<!--                    <div class="alert alert-info">-->
+<!--                        <strong>Association CE:</strong> Utiliser des techniques algorithmiques adaptées (AC2) en formalisant et modélisant des situations complexes (CE2.01) et en justifiant les choix et validant les résultats (CE2.04)-->
+<!--                    </div>-->
+<!--                    <p><strong>Preuve - Stage : Algorithmes récursifs</strong></p>-->
+<!--                    <p>Lors de mon stage, j'ai dû trouver des algorithmes adéquats à utiliser pour des situations complexes liées au traitement de gros volumes d'images réparties dans plusieurs dossiers imbriqués (CE2.01). Par exemple, pour extraire toutes les images sans perte ni ralentissement du NAS, j'ai choisi un algorithme de parcours récursif combiné à une structure dynamique pour stocker les résultats. Par exemple, pour chaque dossier, l'algorithme va parcourir tout son contenu, puis revient en arrière pour continuer avec les dossiers suivants, garantissant donc un balayage bien complet. Ce choix, justifié par une réflexion méthodique, m'a permis d'optimiser le temps de traitement tout en assurant une bonne récupération de toutes les images (CE2.04).</p>-->
+<!--                </div>-->
+<!--            </div>-->
 
+<!--            <div class="card mt-4">-->
+<!--                <div class="card-header d-flex justify-content-between align-items-center">-->
+<!--                    <span>AC3: Comprendre les enjeux et moyens de sécurisation des données et du code</span>-->
+<!--                    <span class="acquisition-badge">ACQUIS</span>-->
+<!--                </div>-->
+<!--                <div class="card-body">-->
+<!--                    <div class="alert alert-info">-->
+<!--                        <strong>Association CE:</strong> Comprendre les enjeux de sécurisation (AC3) en s'appuyant sur des schémas de raisonnement (CE2.03) et en justifiant les choix et validant les résultats (CE2.04)-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-            <svg class="bi" width="50" height="50">
-                <use xlink:href="#school"/>
-            </svg>
-            <h3 class="pb-2 border-bottom">Parcours de formation</h3>
-            <p class="lead ">
-            <ul class="list-group mb-5">
-                <li class="list-group-item"><strong>2023-2025</strong> : <strong>BUT Informatique</strong> (<strong>IUT de Montpellier</strong>) - Parcours réalisation d'applications :
-                    conception, développement,
-                    validation.
-
-                    <ul class="list-group">
-                        <li class="list-group-item">Apprentissage des <strong>technologies web</strong> et des <strong>bases de données</strong>.
-                        </li>
-                        <li class="list-group-item">Réalisation de projets en équipe, notamment un <strong>site vitrine</strong>, un <strong>serveur
-                            LAMP</strong>, et un <strong>jeu en Java/JavaFX</strong>.
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">Avant <strong>2023</strong> : Formation générale avec une orientation progressive vers les <strong>technologies
-                    numériques</strong>.
-                </li>
-            </ul>
-            </p>
-
-            <svg class="bi" width="50" height="50">
-                <use xlink:href="#lumiere"/>
-            </svg>
-            <h3 class="pb-2 border-bottom">Vision pour le futur</h3>
-            <p class="lead mb-5">
-                Après l’obtention de mon <strong>BUT</strong>, je souhaite poursuivre dans le domaine du <strong>développement
-                web</strong>, en intégrant une <strong>alternance</strong> ou un <strong>stage</strong> qui me permettra
-                d’approfondir mes compétences en <strong>PHP</strong>, frameworks modernes et <strong>architectures
-                web</strong>. À terme, mon objectif est de contribuer à des projets ambitieux et innovants au sein d’une
-                entreprise spécialisée dans la <strong>transformation digitale</strong>.
-            </p>
-
-
-
-        </div>
-
-        <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">Projets</h2>
-
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col thumbnail cursor">
-                    <a href="feature/Poursuite.html" class="link-offset-2 link-underline link-underline-opacity-0">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                             style="background-image: url('./style/img/etude.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Application de poursuite d'étude</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img class="rounded-circle border border-white " width="50" height="50"
-                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                             alt="">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
+            <div class="card">
+                <div class="card-header competence-header">
+                    Compétence 3 - Administrer des systèmes informatiques communicants complexes
                 </div>
+                <div class="card-body competence-body">
+                    <p class="card-text">Niveau 2 - Déployer des services dans une architecture réseau</p>
 
-                <div class="col thumbnail cursor">
-                    <a href="feature/nuitInfo.html" class="link-offset-2 link-underline link-underline-opacity-0">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                             style="background-image: url('./style/img/nuit.png');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img class="rounded-circle border border-white" width="50" height="50"
-                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                             alt="">
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC1: Concevoir et développer des applications communicantes</span>
+                            <span class="acquisition-badge" style="background-color: #28a745;">ACQUIS</span>
                         </div>
-                    </a>
-                </div>
-                <div class="col thumbnail cursor">
-                    <a href="feature/Trains.html" class="link-offset-2 link-underline link-underline-opacity-0">
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Concevoir et développer des applications communicantes (AC1) en offrant une qualité de service optimale (CE3.02) et en appliquant les normes en vigueur et les bonnes pratiques architecturales (CE3.03)
+                            </div>
+                            <p><strong>Preuve - Stage et SAÉ : Développement d'applications web</strong></p>
+                            <p>Lors de mon stage chez Lundi Matin, j'ai participé à la conception et au développement d'applications web communicantes en utilisant des technologies modernes comme Angular et VueJS. J'ai également travaillé sur une SAÉ en début d'année, où j'ai développé une application en PHP utilisant le pattern MVC, Bootstrap pour le design, et JSchart pour la visualisation des données. Nous avons utilisé une base de données PostgreSQL pour gérer les données de manière efficace. Ces expériences m'ont permis d'appliquer les normes et bonnes pratiques architecturales (CE3.03) et d'assurer une communication fluide et sécurisée entre les différents composants du système, garantissant ainsi une qualité de service optimale (CE3.02).</p>
+                        </div>
+                    </div>
 
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg "
-                             style="background-image: url('./style/img/trains.JPG');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Trains - Jeu de plateau</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img class="rounded-circle border border-white white" width="50" height="50"
-                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                             alt="">
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC2: Utiliser des serveurs et des services réseaux virtualisés</span>
+                            <span class="acquisition-badge" style="background-color: #28a745;">ACQUIS</span>
                         </div>
-                    </a>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Utiliser des serveurs et services réseaux virtualisés (AC2) en assurant la continuité d'activité (CE3.04) et en appliquant les bonnes pratiques architecturales (CE3.03)
+                            </div>
+                            <p><strong>Preuve - Stage : Infrastructure virtualisée</strong></p>
+                            <p>Lors de mon stage, j'ai utilisé des serveurs virtualisés pour déployer et gérer des applications web. Une des tâches consistait à travailler sur plusieurs versions d'un logiciel où l'on passait d'une base de données MySQL à MariaDB. Pour gérer cela efficacement, j'ai créé deux conteneurs séparés, un pour chaque type de base de données, ce qui m'a permis de travailler simultanément sur les deux versions. Cette approche a non seulement assuré une continuité d'activité fiable (CE3.04), mais a également suivi les bonnes pratiques architecturales (CE3.03). Grâce à cette virtualisation, les environnements étaient bien cloisonnés, ce qui facilitait aussi les restaurations en cas de besoin.</p>
+                        </div>
+                    </div>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC3: Sécuriser les services et données d'un système</span>
+                            <span class="acquisition-badge">EN COURS D'ACQUISITION</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Sécuriser les services et données (AC3) en sécurisant le système d'information (CE3.01) et en appliquant les normes en vigueur et les bonnes pratiques de sécurité (CE3.03)
+                            </div>
+                            <p><strong>Preuve - SAÉ : Gestion de base de données</strong></p>
+                            <p>Pendant ma SAÉ, j'ai appliqué des pratiques de sécurité pour protéger les données dans la base de données PostgreSQL, en utilisant des requêtes préparées pour éviter les injections SQL, et en suivant les normes et bonnes pratiques de sécurité (CE3.03). Ces mesures garantissent une navigation protégée et une gestion sécurisée des données pour tous les utilisateurs.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
+            <div class="card mt-5">
+                <div class="card-header competence-header4">
+                    Compétence 4 - Gérer des données de l'information
+                </div>
+                <div class="card-body competence-body">
+                    <p class="card-text">Niveau 2 - Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</p>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC1: Optimiser les modèles de données de l'entreprise</span>
+                            <span class="acquisition-badge" style="background-color: #28a745;">ACQUIS</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Optimiser les modèles de données de l'entreprise (AC1) en s'appuyant sur des bases mathématiques (CE4.03) et en assurant la cohérence et la qualité (CE4.02)
+                            </div>
+                            <p><strong>Preuve - Projet universitaire et SAÉ : Normalisation BD</strong></p>
+                            <p>Lors de la SAÉ et durant la Nuit de l'Info, j'ai travaillé sur l'optimisation des modèles de données. Cela incluait une approche rigoureuse basée sur des principes mathématiques (CE4.03) pour analyser les dépendances fonctionnelles et appliquer les formes normales (1FN, 2FN, 3FN, BCNF). Ce travail a permis d'assurer la cohérence et la qualité des données (CE4.02) en éliminant les redondances et en optimisant les performances grâce à une meilleure structuration des tables.</p>
+                        </div>
+                    </div>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC2: Assurer la confidentialité des données (intégrité et sécurité)</span>
+                            <span class="acquisition-badge" style="background-color: #28a745;" >ACQUIS</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Assurer la confidentialité des données (AC2) en respectant les réglementations sur le respect de la vie privée et la protection des données personnelles (CE4.01) et en assurant la cohérence et la qualité (CE4.02)
+                            </div>
+                            <p><strong>Preuve - SAÉ : Sécurité des données utilisateur</strong></p>
+                            <p>Lors de la SAÉ, j'ai travaillé sur la sécurité des données utilisateur en utilisant des techniques de salage, de hachage et de chiffrement pour protéger les informations sensibles. En respectant les réglementations sur la vie privée (CE4.01), j'ai mis en place des systèmes de gestion sécurisée des informations utilisateur, assurant ainsi la confidentialité et la qualité des données (CE4.02). Ces techniques ont permis de préserver l'intégrité des données et de garantir une sécurité optimale.</p>
+                        </div>
+                    </div>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC3: Organiser la restitution de données à travers la programmation et la visualisation</span>
+                            <span class="acquisition-badge">EN COURS D'ACQUISITION</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Organiser la restitution de données (AC3) en assurant la cohérence et la qualité (CE4.02) et en s'appuyant sur des bases mathématiques (CE4.03)
+                            </div>
+                            <p><strong>Preuve - SAÉ : Visualisation avec ChartJS</strong></p>
+                            <p>Lors de la SAÉ, j'ai formaté des données pour les intégrer dans des graphiques interactifs en utilisant ChartJS. Cela a permis de visualiser les données de manière claire et efficace, facilitant ainsi l'analyse et la compréhension des informations. En assurant la cohérence et la qualité des données (CE4.02), j'ai pu créer des visualisations qui améliorent la lisibilité et l'accès à l'information, tout en respectant les bonnes pratiques de programmation et de visualisation des données.</p>
+                        </div>
+                    </div>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC4: Manipuler des données hétérogènes</span>
+                            <span class="acquisition-badge">EN COURS D'ACQUISITION</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Manipuler des données hétérogènes (AC4) en respectant les enjeux économiques, sociétaux et écologiques (CE4.02) et en s'appuyant sur des bases mathématiques (CE4.03)
+                            </div>
+                            <p><strong>Preuve - Stage et SAÉ : Intégration de données</strong></p>
+                            <p>Lors de mon stage et durant la SAÉ, j'ai commencé à acquérir des compétences dans l'intégration de sources de données diverses. J'ai travaillé avec différents formats de données et APIs, ce qui m'a permis de comprendre les enjeux liés à la manipulation de données hétérogènes. En respectant les enjeux économiques, sociétaux et écologiques (CE4.02), j'ai appliqué des bases mathématiques pour structurer et analyser ces données (CE4.03). Ces expériences m'ont permis de progresser dans ce domaine technique avancé, et je prévois de continuer à développer ces compétences lors de mon alternance de troisième année.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mt-5">
+                <div class="card-header competence-header5">
+                    Compétence 5 - Conduire un projet
+                </div>
+                <div class="card-body competence-body">
+                    <p class="card-text">Niveau 2 - Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs</p>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC1: Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information</span>
+                            <span class="acquisition-badge">EN COURS D'ACQUISITION</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Identifier les processus présents dans une organisation (AC1) en respectant les règles juridiques et en sensibilisant à une gestion éthique, responsable, durable et interculturelle (CES03)
+                            </div>
+                            <p><strong>Preuve - Stage et SAÉ : Refonte du SI</strong></p>
+                            <p>Lors de mon stage et durant la SAÉ, j'ai travaillé sur l'identification des processus existants au sein des organisations. J'ai analysé les tâches longues et répétitives pour les simplifier. J'ai également étudié les processus et outils utilisés par les équipes pour proposer des améliorations. Cela m'a permis de développer une approche proactive, créative et critique (CES05) tout en respectant les règles juridiques et éthiques (CES03).</p>
+                        </div>
+                    </div>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC2: Formaliser les besoins du client et de l'utilisateur</span>
+                            <span class="acquisition-badge" style="background-color: #28a745;">ACQUIS</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Formaliser les besoins du client et de l'utilisateur (AC2) en communiquant efficacement avec les différents acteurs d'un projet (CES01) et en adoptant une démarche proactive, créative et critique (CES05)
+                            </div>
+                            <p><strong>Preuve - Connaissance des outils : User Stories et Tableaux de bord</strong></p>
+                            <p>Bien que je n'aie pas eu l'occasion de formaliser les besoins des clients et des utilisateurs en tant que Product Owner, je suis familier avec les outils utilisés pour cette tâche, tels que les user stories et les tableaux de bord. Ces connaissances me permettent de comprendre comment communiquer efficacement avec les différents acteurs d'un projet (CES01) et d'adopter une démarche proactive et critique (CES05) pour clarifier les attentes et les transformer en spécifications utiles pour l'équipe.</p>
+                        </div>
+                    </div>
+
+                    <div class="card inner-card mt-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>AC3: Identifier les critères de faisabilité d'un projet informatique</span>
+                            <span class="acquisition-badge">EN COURS D'ACQUISITION</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                <strong>Association CE:</strong> Identifier les critères de faisabilité d'un projet informatique (AC3) en communiquant efficacement avec les différents acteurs d'un projet (CES01) et en adoptant une démarche proactive, créative et critique (CES05)
+                            </div>
+                            <p><strong>Preuve - Stage et SAÉ : Faisabilité technique</strong></p>
+                            <p>Lors de mon stage et durant la SAÉ, j'ai commencé à identifier les critères de faisabilité technique, juridique et financière des projets sur lesquels j'ai travaillé. Par exemple, j'ai évalué les fonctionnalités demandées pour les projets et identifié les risques potentiels. En adoptant une démarche proactive et critique (CES05), j'ai veillé à ce que les propositions soient réalistes et satisfassent les besoins tout en respectant les contraintes techniques. Cela m'a permis de mieux comprendre comment communiquer efficacement avec les différents acteurs d'un projet (CES01).</p>
+                        </div>
+                    </div>
+
+                    <div class="card inner-card mt-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>AC4: Définir et mettre en œuvre une démarche de suivi de projet</span>
+                        <span class="acquisition-badge" style="background-color: #28a745;">ACQUIS</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            <strong>Association CE:</strong> Définir et mettre en œuvre une démarche de suivi de projet (AC4) en communiquant efficacement avec les différents acteurs d'un projet (CES01) et en sensibilisant à une gestion éthique, responsable, durable et interculturelle (CES03)
+                        </div>
+                        <p><strong>Preuve - Stage et SAÉ : Suivi de projet</strong></p>
+                        <p>Durant mon stage, j'ai utilisé une roadmap et rédigé des rapports journaliers pour assurer un suivi efficace du projet. Cela m'a permis de communiquer efficacement avec les différents acteurs du projet (CES01) et de maintenir une vision claire des objectifs et des livrables. Lors de la SAÉ, nous avons utilisé Trello pour un suivi constant des tâches et des progrès, ce qui a facilité la gestion et l'organisation du travail d'équipe. Ces expériences m'ont aidé à développer une approche éthique, responsable et durable (CES03) dans la gestion de projet.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
         </div>
 
+
+
     </main>
-    <div class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="footer mt-auto py-3 bg-body-tertiary" >
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
